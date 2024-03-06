@@ -1,0 +1,61 @@
+:root {
+  --color-text: #190505;
+  --bg-primary: #FEFAFA;
+  --bg-secondary: #E2A262;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--bg-primary);
+  font-family: 'Cascadia Code', monospace;
+  color: var(--color-text);
+}
+
+header {
+  overflow: hidden;
+}
+
+h1 {
+  margin-block: 2rem;
+  text-align: center;
+}
+
+ul {
+  max-width: 900px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  padding-left: 0;
+  margin-block: 0;
+  list-style: none;
+}
+
+ul > li {
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  text-overflow: ellipsis;
+  color: #FFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
