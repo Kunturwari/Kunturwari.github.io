@@ -23,6 +23,7 @@ html {
 body {
   min-height: 100vh;
   display: grid;
+  padding-top: 2rem;
   grid-template-rows: 1fr auto;
   margin: 0;
   background: var(--bg-primary);
