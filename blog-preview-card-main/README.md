@@ -44,7 +44,7 @@ Use the tag <time> to represents a specific period in time.
 
 ## Author
 
-- Website - [Alexander Pazos](https://kunturwari.github.io/blog-preview-card-main/index.html)
+- Website - [Alexander Pazos]
 - Frontend Mentor - [@Kunturwari](https://www.frontendmentor.io/profile/Kunturwari)
 
 

@@ -48,6 +48,6 @@ table {
 
 ## Author
 
-- Website - [Alexander Pazos](https://kunturwari.github.io/recipe-page-main/index.html)
+- Website - [Alexander Pazos]
 - Frontend Mentor - [@Kunturwari](https://www.frontendmentor.io/profile/Kunturwari)
 

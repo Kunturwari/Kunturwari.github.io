@@ -29,7 +29,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- Website - [Alexander Pazos](https://kunturwari.github.io/recipe-page-main/index.html)
+- Website - [Alexander Pazos]
 - Frontend Mentor - [@Kunturwari](https://www.frontendmentor.io/profile/Kunturwari)
 
 
