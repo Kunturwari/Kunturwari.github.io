@@ -38,7 +38,7 @@ body {
   color: var(--color-primary);
 }
 
-article {
+main {
   flex: 1;
 }
 
@@ -47,6 +47,7 @@ article {
     display: flex;
     max-width: 735px;
     border-radius: var(--radius);
+    margin-inline: auto;
     box-shadow: 0px 0px 20px var(--bg-body);
   }
 
