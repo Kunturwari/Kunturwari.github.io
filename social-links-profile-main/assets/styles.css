@@ -11,7 +11,8 @@
 
 body {
   display: grid;
-  align-content: center;
+  grid-template-columns: minmax(min-content, 350px);
+  place-content: center;
   min-height: 100svh;
   padding: 1.5rem;
   margin: 0;
@@ -19,13 +20,6 @@ body {
   font-family: Inter, sans-serif;
   text-align: center;
   color: hsl(0, 0%, 100%);
-}
-
-@media screen and (width >= 375px) {
-  body {
-    grid-template-columns: 327px;
-    place-content: center;
-  }
 }
 
 article {
