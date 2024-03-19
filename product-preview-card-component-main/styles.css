@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-body: hsl(30, 38%, 92%);
+  --color-neutral: hsl(0, 0%, 100%);
+  --color-primary: hsl(158, 36%, 37%);
+  --color-secondary: hsl(228, 12%, 48%);
+  --color-title: hsl(212, 21%, 14%);
+  --font-secondary: "Fraunces", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding-block: 1.7rem;
+  margin: 0;
+  background: var(--bg-body);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-secondary);
+}
+
+article {
+  width: 92%;
+  border-radius: 10px;
+  margin-inline: auto;
+  background: var(--color-neutral);
+  overflow: hidden;
+}
+
+source, img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.content > :nth-child(odd) {
+  margin: 0;
+}
+
+.content p:first-of-type {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+h1 {
+  margin-block: 0.8rem 1rem;
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--color-title);
+}
+
+h1 + p {
+  font-weight: 500;
+  text-wrap: pretty;
+  line-height: 1.62;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding-left: 0;
+  margin-block: 1.3rem 1rem;
+  list-style: none;
+}
+
+ul li:first-child {
+  font-family: var(--font-secondary);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding-block: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-primary);
+  font-size: 0.938rem;
+  font-weight: 700;
+  color: var(--color-neutral);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-secondary);
+}
