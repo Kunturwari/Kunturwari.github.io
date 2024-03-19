@@ -50,7 +50,7 @@ article {
 
 source, img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   vertical-align: middle;
   font-style: italic;
 }
