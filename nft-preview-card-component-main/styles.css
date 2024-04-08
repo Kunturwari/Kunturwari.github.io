@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --main-clr-bg: hsl(217, 54%, 11%);
+  --card-clr-bg: hsl(216, 50%, 16%);
+  --text-clr-primary: hsl(215, 51%, 70%);
+  --text-clr-neutral: hsl(0, 0%, 100%);
+  --text-clr-bold: hsl(178, 100%, 50%);
+  --clr-decoration: hsl(215, 32%, 27%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100svh;
+  padding: 1rem;
+  margin: 0;
+  background: var(--main-clr-bg);
+  font-family: "Outfit", sans-serif;
+  color: var(--text-clr-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  aspect-ratio: 1 / 1;
+}
+
+h1,
+strong {
+  color: var(--text-clr-neutral);
+}
+
+p {
+  margin: 0;
+}
+
+article {
+  max-width: 327px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: var(--card-clr-bg);
+}
+
+.img-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (hover: hover) {
+  .img-container:hover::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/icon-view.svg") hsla(178 100% 50% / .5) no-repeat center;
+    cursor: pointer;
+  }
+}
+
+h1 {
+  font-size: 1.35rem;
+}
+
+h1 + p {
+  line-height: 1.6;
+}
+
+.sale-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.2rem;
+  border-bottom: 1px solid var(--clr-decoration);
+}
+
+.sale-info > * {
+  padding-left: 1.3rem;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.sale-info p {
+  background-image: url("images/icon-ethereum.svg");
+}
+
+.sale-info time {
+  background-image: url("images/icon-clock.svg");
+}
+
+.sale-info p {
+  color: var(--text-clr-bold);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+footer img {
+  width: 30px;
+  border: 1px solid var(--text-clr-neutral);
+  border-radius: 100%;
+}
+
+footer strong {
+  font-weight: normal;
+}
