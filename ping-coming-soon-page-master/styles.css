@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --clr-primary: hsl(223, 87%, 63%);
+  --clr-secondary-blue: hsl(223, 100%, 88%);
+  --clr-secondary-red: hsl(354, 100%, 66%);
+  --clr-neutral-normal: hsl(0, 0%, 59%);
+  --clr-neutral-bold: hsl(209, 33%, 12%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  margin: 0;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  color: var(--clr-neutral-bold);
+}
+
+.wrapper {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+header {
+  margin-block: 3.5rem;
+}
+
+.info {
+  margin: 0;
+  font-size: 1.7rem;
+  color: var(--clr-neutral-normal);
+}
+
+@media (min-width: 767px) {
+  .info {
+    font-size: 2.8rem;
+  }
+}
+
+.info strong {
+  color: var(--clr-neutral-bold);
+}
+
+.info + p {
+  margin-bottom: 1.7rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 767px) {
+  .info + p {
+    font-size: 1rem;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.data {
+  flex: 3 1 300px;
+}
+
+.data-input, .form-button {
+  font-size: 1rem;
+  padding-inline: 2rem;
+  border-radius: 50px;
+  outline: none;
+  height: 50px;
+}
+
+.data-input {
+  width: 100%;
+  border: 1px solid var(--clr-primary);
+}
+
+.data-input::placeholder {
+  color: var(--clr-secondary-blue)
+}
+
+.data-input--error {
+  border-color: var(--clr-secondary-red);
+}
+
+.data-error {
+  display: none;
+  margin-block: 0.5rem;
+  font-style: italic;
+  font-size: 0.8125rem;
+  color: var(--clr-secondary-red);
+}
+
+@media (min-width: 767px) {
+  .data-error {
+    padding-left: 2rem;
+    text-align: left;
+  }
+}
+
+.show-error {
+  display: block;
+}
+
+.form-button {
+  flex: 1 1 150px;
+  border: none;
+  background: var(--clr-primary);
+  color: #FFF;
+  cursor: pointer;
+}
+
+.illustration {
+  margin-block: 5rem;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+li {
+  width: 34px;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+li:hover {
+  background: var(--clr-primary);
+}
+
+li img {
+  
+  filter: invert(50%) sepia(91%) saturate(3372%) hue-rotate(208deg) brightness(97%) contrast(94%);
+}
+
+li:hover img {
+  filter: invert(94%) sepia(0%) saturate(24%) hue-rotate(343deg) brightness(104%) contrast(106%);
+}
+
+footer p {
+  font-size: 0.75rem;
+  color: var(--clr-neutral-normal);
+}
